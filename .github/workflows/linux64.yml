@@ -24,7 +24,7 @@ jobs:
       - name: Install Qt
         uses: jurplel/install-qt-action@v2
         with:
-          version: version: '5.15.3'
+          version: '5.15.3'
           modules: qtcharts qtwebengine
 
       - name: Build kleiner-brauhelfer-2
