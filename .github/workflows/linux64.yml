@@ -19,13 +19,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Install dependencies
-        run: sudo apt-get update -y && sudo apt-get install build-essential libgl1-mesa-dev -y
-
-      - name: Install Qt
-        uses: jurplel/install-qt-action@v2
-        with:
-          version: '5.15.3'
-          modules: qtcharts qtwebengine
+        run: sudo apt-get update -y && sudo apt-get install build-essential mesa-common-dev libgl1-mesa-dev libfontconfig1 qt5-default libqt5charts5* libqt5webengine* libqt5wayland* -y
 
       - name: Build kleiner-brauhelfer-2
         run: |
