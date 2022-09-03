@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Install dependencies
-        run: sudo apt-get update -y && sudo apt-get install build-essential mesa-common-dev libgl1-mesa-dev libfontconfig1 qt5-default libqt5charts5* libqt5webengine* libqt5wayland* -y
+        run: sudo apt-get update -y && sudo apt-get install build-essential mesa-common-dev libgl1-mesa-dev libfontconfig1 qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5charts5* libqt5webengine* libqt5wayland* -y
 
       - name: Build kleiner-brauhelfer-2
         run: |
